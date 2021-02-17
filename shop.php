@@ -1,0 +1,18 @@
+<?php
+include 'take-informations.php'; 
+$r->$read();
+?>
+<form method="POST" action=""><br />
+<div class="form-group row"><label for="inputPassword" class="col-sm-4 col-form-label"><input class="form-control input" name="check1-1" type="text" required placeholder="Введите имя"/></div>
+<div class="form-group row"><label for="inputPassword" class="col-sm-4 col-form-label"><input class="form-control input" name="check1-2" type="text" required placeholder="Email"/></div>
+<div class="form-group row"><label for="inputPassword" class="col-sm-4 col-form-label"><h4>Тип авто</h4></label><div class="col-sm-6"><h4><select class="form-control" name="check1"> <?php for($i = 0; $i < $total1-1; $i++) { ?><option value="<?php echo($arr1[$i]); ?>"><?php echo($arr1[$i]); ?></option><?php } ?></select></h4></div></div>
+<div class="form-group row"><label for="inputPassword" class="col-sm-4 col-form-label"><h4>Обьем-двигателя</h4></label><div class="col-sm-6"><h4><select class="form-control" name="check2"> <?php for($i = 0; $i < $total2-1; $i++) { ?><option value="<?php echo($arr2[$i]); ?>"><?php echo($arr2[$i]); ?></option><?php } ?></select></h4></div></div>
+<div class="form-group row"><label for="inputPassword" class="col-sm-4 col-form-label"><h4>Тип кузова</h4></label><div class="col-sm-6"><h4><select class="form-control" name="check3"> <?php for($i = 0; $i < $total3-1; $i++) { ?><option value="<?php echo($arr3[$i]); ?>"><?php echo($arr3[$i]); ?></option><?php } ?></select></h4></div></div>
+<div class="form-group row"><label for="inputPassword" class="col-sm-4 col-form-label"><h4>Трансмиссия</h4></label><div class="col-sm-6"><h4><select class="form-control" name="check4"> <?php for($i = 0; $i < $total4-1; $i++) { ?><option value="<?php echo($arr4[$i]); ?>"><?php echo($arr4[$i]); ?></option><?php } ?></select></h4></div></div>
+<div class="form-group row"><label for="inputPassword" class="col-sm-4 col-form-label"><h4>Коробка</h4></label><div class="col-sm-6"><h4><select class="form-control" name="check5"> <?php for($i = 0; $i < $total5-1; $i++) { ?><option value="<?php echo($arr5[$i]); ?>"><?php echo($arr5[$i]); ?></option><?php } ?></select></h4></div></div>
+<div class="form-group row"><label for="inputPassword" class="col-sm-4 col-form-label"><h4>Скорости</h4></label><div class="col-sm-6"><h4><select class="form-control" name="check6"> <?php for($i = 0; $i < $total6-1; $i++) { ?><option value="<?php echo($arr6[$i]); ?>"><?php echo($arr6[$i]); ?></option><?php } ?></select></h4></div></div>
+<div class="form-group row"><label for="inputPassword" class="col-sm-4 col-form-label"><h4>Интерьєр</h4></label><div class="col-sm-6"><h4><select class="form-control" name="check7"> <?php for($i = 0; $i < $total7-1; $i++) { ?><option value="<?php echo($arr7[$i]); ?>"><?php echo($arr7[$i]); ?></option><?php } ?></select></h4></div></div>
+<div class="form-group row"><label for="inputPassword" class="col-sm-4 col-form-label"><h4>Цвет</h4></label><div class="col-sm-6"><h4><select class="form-control" name="check8"> <?php for($i = 0; $i < $total8-1; $i++) { ?><option value="<?php echo($arr8[$i]); ?>"><?php echo($arr8[$i]); ?></option><?php } ?></select></h4></div></div>
+<div class="form-group row"><label for="inputPassword" class="col-sm-4 col-form-label"><h4>Опция</h4></label><div class="col-sm-6"><h4><select class="form-control" name="check9"> <?php for($i = 0; $i < $total9-1; $i++) { ?><option value="<?php echo($arr9[$i]); ?>"><?php echo($arr9[$i]); ?></option><?php } ?></select></h4></div></div>
+<input type="submit" name="button3" class="btn btn-success" value="Выбрать авто"/>
+</form>

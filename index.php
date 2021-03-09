@@ -8,7 +8,7 @@
 <div class="col-4 cart ">
 <h1><img src="images/cart.png"  width="40" height=""> Cart</h1>
 <hr>
-<h4>Ваш заказ в обработке:</h4>
+<h4>Ваш заказ в находтся обработке:</h4>
 <?php include 'cart.php'; ?>
 <h5>Ожидайте письмо на Ваш Email про готовность заказа</h5>
 </div>
